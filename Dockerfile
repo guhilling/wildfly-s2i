@@ -13,6 +13,7 @@ ENV WILDFLY_VERSION=12
 # TODO: Set labels used in OpenShift to describe the builder image
 LABEL io.k8s.description="Platform for serving wildfly applications" \
       io.k8s.display-name="Wildfly 12.x" \
+      io.openshift.s2i.scripts-url="file:///usr/libexec/s2i" \
       io.openshift.expose-services="8080:http" \
       io.openshift.tags="builder,wildfly,jee,java"
 
